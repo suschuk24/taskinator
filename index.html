@@ -19,16 +19,12 @@
             </div>
             <div class="form-group">
                 <select name="task-type" class="select-dropdown">
-                  <option value="" disabled selected>Vehicle/Customer Status</option>
-                  <option value="Customer Waiting">Customer Waiting</option>
-                  <option value="Diag Pending/In Progress">Diag Pending/In Progress</option>
-                  <option value="Hold for Auth">Hold for Auth</option>
-                  <option value="Hold for Parts">Hold for Parts</option>
-                  <option value="Sold - Same Day">Sold - Same Day</option>
-                  <option value="Sold - Same Week">Sold - Same Week</option>
-                  <option value="Quality Control">Quality Control</option>
-                  <option value="Complete">Complete</option>
-                  <option value="Warranty">Warranty</option>
+                  <option value="" disabled selected>Select A Technician</option>
+                  <option value="Steve">Steve</option>
+                  <option value="Juan">Juan</option>
+                  <option value="Robert">Robert</option>
+                  <option value="Freddy">Freddy</option>
+                  <option value="Eric">Eric</option>
                 </select>
               </div>
             <div class="form-group">
@@ -41,50 +37,38 @@
     <main class="page-content" id="page-content">
         <!--Needs Assignment-->
         <section class="task-list-wrapper">
-            <h2 class="list-title">Needs Assignment</h2>
+            <h2 class="list-title">Pending Assignment</h2>
             <ul class="task-list" id="tasks-to-do"></ul>
         </section>
 
-        <!--Service Writers-->
+        <!--Pending Sell-->
         <section class="task-list-wrapper">
-            <h2 class="list-title">Front Office</h2>
-            <ul class="task-list" id="tasks-to-do"></ul>
+            <h2 class="list-title">Pending Sell</h2>
+            <ul class="task-list" id="pend-sell"></ul>
         </section>
 
-        <!-- General Service -->
+        <!-- Hold for Parts -->
         <section class="task-list-wrapper">
-            <h2 class="list-title">GS Techs</h2>
-            <ul class="task-list" id="tasks-completed"></ul>
+            <h2 class="list-title">Hold For Parts</h2>
+            <ul class="task-list" id="hold-part"></ul>
         </section>
 
-        <!--Steve-->
+        <!--Hold for Auth-->
         <section class="task-list-wrapper">
-            <h2 class="list-title">Steve</h2>
-            <ul class="task-list" id="tasks-to-do"></ul>
-        </section>
-
-        <!-- Richard -->
-        <section class="task-list-wrapper">
-            <h2 class="list-title">Richard</h2>
-            <ul class="task-list" id="tasks-in-progress"></ul>
-        </section>
-
-        <!-- Juan -->
-        <section class="task-list-wrapper">
-            <h2 class="list-title">Juan</h2>
-            <ul class="task-list" id="tasks-completed"></ul>
+            <h2 class="list-title">Hold for Auth</h2>
+            <ul class="task-list" id="hold-auth"></ul>
         </section>
 
         <!-- Quality Control -->
         <section class="task-list-wrapper">
             <h2 class="list-title">QC</h2>
-            <ul class="task-list" id="tasks-completed"></ul>
+            <ul class="task-list" id="quality-control"></ul>
         </section>
 
         <!-- Complete -->
         <section class="task-list-wrapper">
             <h2 class="list-title">Complete</h2>
-            <ul class="task-list" id="tasks-completed"></ul>
+            <ul class="task-list" id="complete"></ul>
         </section>
     </main>
 

@@ -20,7 +20,7 @@ var taskFormHandler = function(event) {
         return false;
     };
 
-    formEl.reset();
+    formEl.reset();    
 
   
     // send it as an argument to createTaskEl
@@ -76,7 +76,7 @@ var createTaskActions = function(taskId) {
 
     actionContainerEl.appendChild(statusSelectEl);
 
-    var statusChoices = ["Needs Assignment", "Front Office", "GS Techs", "Steve", "Richard", "Juan", "QC", "Complete"];
+    var statusChoices = ["Pending Assignment", "Pending Sell", "Hold for Parts", "Hold for Auth", "RQC", "Complete"];
 
 for (var i = 0; i < statusChoices.length; i++) {
     // create option element
@@ -142,5 +142,4 @@ var editTask = function(taskId) {
 
   };
 
-pageContentEl.addEventListener("click", taskButtonHandler);
-
+pageContentEl.addEventListener ("click", taskButtonHandler);
